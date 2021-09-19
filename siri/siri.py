@@ -10,7 +10,7 @@ from config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 ABS="Developer"
-APPER="shamilhabeeb"
+APPER="i_am_adhizz"
 OWNER="Owner"
 GITCLONE="github.com/shamilhabeebnelli/song-bot"
 B2="telegram.dog/shamilhabeeb"
@@ -67,7 +67,7 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[SmL\MwK 🇮🇳]" 
+            performer = f"[i_am_adhizz]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
@@ -82,7 +82,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("`Bruh... Uploading... Please Wait...`")
+    m.edit("`Got it....... Uploading..........`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
